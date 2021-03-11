@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, VERSION } from "@angular/core";
 import { ApiService } from "./api/api.service";
 import { environment } from "../environments/environment";
+import { MovieResponse } from "./movie/movie.model";
 
 @Component({
   selector: "my-app",
@@ -28,7 +29,7 @@ export class AppComponent implements AfterViewInit {
     const apiKey = "1b501bbda107113acc653f328a2e935d";
     const language = "en";
     this.api.getMovies(apiKey, language).subscribe(
-      data => {
+      (data: MovieResponse) => {
         console.log("Data", data);
       },
       error => {}
