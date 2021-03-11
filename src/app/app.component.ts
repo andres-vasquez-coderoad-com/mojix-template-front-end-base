@@ -16,7 +16,7 @@ export class AppComponent implements AfterViewInit {
         a) Fibonnacci sequence
         b) Prime numbers
         c) Odd/Even.
-     4. Modify the selector to support muti-language.
+     4. Modify the selector to support multi-language.
 
      ******** EXTRAS **************
      1. Use the Movie component to display the movie info
