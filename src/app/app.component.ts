@@ -4,9 +4,9 @@ import { environment } from "../environments/environment";
 import { MovieResponse } from "./movie/movie.model";
 
 @Component({
-  selector: "my-app",
+  selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements AfterViewInit {
   /* ******** INTRUCTIONS **************

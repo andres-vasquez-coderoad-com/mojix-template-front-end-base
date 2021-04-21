@@ -10,7 +10,13 @@ import { AppRoutingModule } from "./app-routing.module";
 import { RouteReuseStrategy } from "@angular/router";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   providers: [
